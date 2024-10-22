@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tarea 5 - Formularios HTML</title>
+    </head>
+    <body>
+        <header>
+            <h1>Tarea 5 - Formularios HTML</h1>
+        </header>
+        <main>
+            <form action="/submit" method="post">
+                <legend>Formulario Tarea 5 HTML</legend>
+                <br>
+                <br>
+                    <label for="name"><b>Nombre</b></label>
+                    <br>
+                    <input type="text" id="name" name="name" required>
+                <br>
+                <br>
+                    <label for="lastname"><b>Apellidos</b></label>
+                    <br>
+                    <input type="text" id="lastname" name="lastname" required>
+                <br>
+                <br>
+                    <label for="email"><b>Correo Electrónico</b></label>
+                    <br>
+                    <input type="email" id="email" name="email" required>
+                <br>
+                <br>
+                    <label for="password"><b>Contraseña</b></label>
+                    <br>
+                    <input type="password" id="password" name="password" required>
+                <br>
+                <br>
+                    <label for="repitpassword"><b>Repetir Contraseña</b></label>
+                    <br>
+                    <input type="password" id="repitpassword" name="repitpassword" required>
+                <br>
+                <br>
+                    <label for="phone"><b>Teléfono</b></label>
+                    <br>
+                    <input type="tel" id="phone" name="phone" required>
+                <br>
+                <br>
+                    <label for="site"><b>Sitio Web Profesional</b></label>
+                    <br>
+                    <input type="url" id="site" name="site" required>
+                <br>
+                <br>
+                    <label for="height"><b>Altura (cm)</b></label>
+                    <br>
+                    <input type="number" id="height" name="height" min="140" max="220" required>
+                <br>
+                <br>
+                    <label for="birthdate"><b>Fecha de Nacimiento</b></label>
+                    <br>
+                    <input type="date" id="birthdate" name="birthdate" required>
+                <br>
+                <br>
+                    <label for="gender"><b>Sexo</b></label>
+                    <br>
+                    <select id="gender" name="gender" required>
+                        <option value="">Selecciona tu Género</option>
+                        <option value="male">Masculino</option>
+                        <option value="female">Femenino</option>
+                        <option value="nbinario">No binario</option>
+                        <option value="fluido">Genero Fluido</option>
+                        <option value="agenero">Agenero</option>
+                        <option value="bigenero">Bigénero</option>
+                        <option value="transgenero">Transgenero</option>
+                        <option value="multigenero">Multigénero</option>
+                        <option value="demigenero">Demigénero</option>
+                        <option value="intergenero">Intergenero</option>
+                        <option value="trisogenero">Triogénero</option>
+                        <option value="quingenero">Quingénero</option>
+                        <option value="other">Otro</option>
+                        <option value="nodecirlo">Prefiero no Decirlo</option>
+                    </select>
+                <br>
+                <br>
+                    <label for="favcolor"><b>Color Favorito</b></label>
+                    <br>
+                    <input type="color" id="favcolor" name="favcolor" required>
+                <br>
+                <br>
+                    <input type="checkbox" id="terms" name="terms" required>
+                    <label for="terms">Acepto los <a href="terminosycondiciones.html" target="_blank">Términos y Condiciones</a></label>
+                <br>
+                <br>
+                    <input type="submit" id="submit" value="Enviar">
+            </form>
+        </main>
+        <br>
+        <hr>
+        <br>
+        <footer>
+            <p>Daniel Blanco Mosquera &copy; 2024</p>
+            <p>
+            <p><strong>Formularios HTML para <abbr title="Aplicaciones Web">AW</abbr> de 2º<abbr
+                        title="Sistemas Microinformaticos y Redes">SMR</abbr></strong></p>
+        </footer>
+    </body>
+</html>
