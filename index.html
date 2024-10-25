@@ -7,17 +7,22 @@
 </head>
 
 
-<body>
+<body style="text-align: center;">
     <header>
         <h1>Pagina Inicio</h1>
         <h2>Daniel Blanco Mosquera</h2>
-        <h3><abbr title="Aplicaciones Web">AW</abbr> | 2º <abbr title="Sistemas Microinformaticos y Redes">SMR</abbr>
+        <h3>
+            <abbr title="Aplicaciones Web">AW</abbr> | 2º <abbr title="Sistemas Microinformaticos y Redes">SMR</abbr>
         </h3>
+        <nav>
+            <a href="#tabla">Tareas</a>
+            <a href="#repo">Repositorio GitHub</a>
+        </nav>
     </header>
 
     <main>
         <hr>
-        <section>
+        <section id="tabla">
             <h2>Tabla con visualizacion de todas las tareas</h2>
             <table style="text-align: center;" border="2">
 
@@ -107,11 +112,31 @@
 
         <hr>
 
-        <section>
+        <section id="repo">
             <h2><a href="https://github.com/danibmos/Aplicaciones-Web">Repositorio GitHub</a></h2>
-            <a href="https://github.com/danibmos/Aplicaciones-Web" target="_blank"><img src="./img/github.png"></a>
+            <a href="https://github.com/danibmos/Aplicaciones-Web" target="_blank"><img style="border-radius: 90px;" src="./img/github.png"></a>
         </section>
+
+        <br>
+        <hr>
+        <br>
+
+        <section id="web" style="margin: 10px;">
+            <h2><a href="./Proyecto/index.html">Web Proyecto</a></h2>
+            <iframe src="./Proyecto/index.html" width="90%" height="600"></iframe>
+        </section>
+        
     </main>
+
+    <br>
+    <hr>
+
+    <footer>
+        <p>Blog de Dani &copy; 2024</p>
+        
+        <p><strong>Web proyecto para <abbr title="Aplicaciones Web">AW</abbr> de 2º<abbr
+                    title="Sistemas Microinformaticos y Redes">SMR</abbr></strong></p>
+    </footer>
 </body>
 
 </html>
