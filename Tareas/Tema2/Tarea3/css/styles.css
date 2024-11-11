@@ -1,0 +1,26 @@
+body {
+    background-color: #2f2436;
+    color: #FFF;
+}
+
+header {
+    background-color: #652E8B;
+    padding: 20px;
+    text-align: center;
+}
+
+a { 
+    background-color: #771EB6;
+    color: #FFF;
+    text-decoration: none;
+    padding: 6px;
+    transition: 0.3s ease-in-out;
+    border: solid 2px;
+    border-color: #8300E0;
+}
+
+a:hover {
+    background-color: #41344A;
+    padding: 5px;
+    border-radius: 15px;
+}
