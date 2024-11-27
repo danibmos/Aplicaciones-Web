@@ -2,8 +2,7 @@
     justify-content: space-around;
 }
 
-.botonesnav
-a {
+.botonesnav a {
     border: 0px solid black;
     border-radius: 12px;
     padding: 4px;
@@ -15,8 +14,7 @@ a {
     margin: 2%;
 }
 
-.botonesnav
-a:hover {
+.botonesnav a:hover {
     box-shadow: -3px 3px rgba(36, 36, 97, 0.425);
     border-radius: 35px;
     padding: 6px;
@@ -31,5 +29,62 @@ a:hover {
 
 .botonesnav:hover {
     margin-bottom: 2%;
-    margin-top: 2%; 
+    margin-top: 2%;
 }
+
+#tareas {
+    margin: 0 auto;
+    max-width: 90%;
+    text-align: center;
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: gray;
+    color: black;
+}
+
+.temas th {
+    border: 2px solid black;
+    background-color: dodgerblue;
+}
+
+.cabecera th {
+    border: 2px solid black;
+    background-color: burlywood; 
+}
+
+table th {
+    border-radius: 20px;
+}
+
+#tareas a {
+    text-decoration: none;
+    color: rgb(0, 14, 139);
+}
+
+#tareas td {
+    border: 2px solid black;
+    padding: 10px;
+    border-radius: 10px;
+    margin: 10px;
+    background-color: white;
+    transition: 0.2s linear;
+}
+
+#tareas #tdblanco {
+    background-color: gray;
+    border-width: 0px;
+}
+
+#tareas td:hover {
+    background-color: rgba(0, 0, 0, 0.164);
+    cursor: crosshair;
+    border-radius: 15%;
+    color: white;
+}
+
+#tareas td a:hover {
+    color:white
+}
+
+
