@@ -3,5 +3,6 @@
         "activityBar.background": "#332325",
         "titleBar.activeBackground": "#483134",
         "titleBar.activeForeground": "#FBF9FA"
-    }
+    },
+    "livePreview.defaultPreviewPath": "/index.html"
 }
