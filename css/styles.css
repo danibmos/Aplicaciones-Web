@@ -113,6 +113,10 @@ table th {
     color: white
 }
 
+#tareas #tdblanco {
+    cursor: auto;
+}
+
 /*Imagen Repositorio */
 
 #repo a {
