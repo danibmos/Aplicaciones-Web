@@ -1,0 +1,38 @@
+body {
+    background-color: aliceblue;
+}
+
+#periodico {
+    display: inline-flex;
+    justify-content: center;
+}
+
+#noticia1, #noticia2, #noticia3{
+    padding: 30px;
+    width: 30%;
+    min-height: 500px;
+    max-height: 1000px;
+    overflow: auto;
+    background-color: beige;
+    margin: 2px;
+}
+
+header {
+    color: red;
+    text-align: center;
+    margin: 2%;
+}
+
+header nav a {
+    padding: 5px;
+    text-decoration: none;
+    color:  black;
+    background-color: aqua;
+    border-radius: 10px;
+    transition: 0.8s ease-in-out;
+}
+
+header nav a:hover {
+    background-color: blue;
+    color: white;
+}
