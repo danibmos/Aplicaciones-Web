@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Resaltado</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f5f5f5;
+        }
+
+        form {
+            width: 90%;
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        div {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+
+        label {
+            width: 100px;
+            display: inline-block;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="password"],
+        input[type="number"] {
+            width: 500px;
+            padding: 8px;
+            border: 1px dotted #ccc;
+            border-radius: 4px;
+        }
+
+        input:required:not(:focus):invalid {
+            background-color: #ffdddd;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #4CAF50;
+            box-shadow: 0 0 5px #4CAF50;
+        }
+
+        input:disabled {
+            background-color: #000;
+            color: white;
+        }
+
+        input[type="submit"] {
+            width: 100px;
+            height: 100px;
+            margin-left: 110px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        input[name^="f"] {
+            border-width: 2px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Login</h2>
+        
+        <div>
+            <label>Nombre:</label>
+            <input type="text" name="fnombre" required>
+        </div>
+        
+        <div>
+            <label>Apellido 1:</label>
+            <input type="text" name="fapellido1" required>
+        </div>
+        
+        <div>
+            <label>Apellido 2:</label>
+            <input type="text" name="fapellido2">
+        </div>
+        
+        <div>
+            <label>Edad:</label>
+            <input type="number" name="edad" required>
+        </div>
+        
+        <div>
+            <label>Contraseña:</label>
+            <input type="password" name="fpassword" required>
+        </div>
+        <div>
+            <label>Confirmar Contraseña:</label>
+            <input type="password" name="fpassword" required>
+        </div>
+        
+        <div>
+            <input type="submit" value="Enviar">
+        </div>
+    </form>
+</body>
+</html>

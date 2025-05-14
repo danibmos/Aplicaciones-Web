@@ -1,167 +1,203 @@
 <!DOCTYPE html>
+<html lang="es">
 
 <head>
-    <title>Tarea 6 - Periodico</title>
     <meta charset="UTF-8">
-    <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias Raxistas</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-y: scroll;
+            min-height: 500px;
+            max-height: 1000px;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin: 10px 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        .contenedor {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            overflow-y: auto;
+            max-height: 860px;
+        }
+
+        .columna {
+            width: 32%;
+            padding: 10px;
+            position: relative;
+            overflow: auto;
+        }
+
+        .columna img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .noticia {
+            margin-top: 20px;
+        }
+
+        .noticia h2 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .noticia p {
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        body {
+            max-height: 1000px;
+            overflow-y: scroll;
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <h1>A Taberna dos Datos</h1>
-        <nav>
-            <a href="#inicio">Inicio</a>
-            <a href="#periodico">Períodico</a>
-        </nav>
+        <h1>Noticias Raxistas</h1>
     </header>
 
-    <main>
-        <section id="periodico">
-            <section id="noticia1">
-                <h2>Los sueños, lágrimas y sudor de Adrián para abrir de nuevo La Jarra en Santiago</h2>
-                <br>
-                <p>Adrián Pérez Sampedro se pasa el día, desde las 7.30 hasta las 21.00 horas, metido en La Jarra. Sus
-                    grifos llevan sin servir una sola cerveza desde que cogió el traspaso, este verano. El sueño de
-                    tener su propio establecimiento en Santiago se truncó para este joven de 26 años, que lleva desde
-                    los 16 trabajando en la hostelería y cuenta entre lágrimas la odisea que pasó tratando de reabrir
-                    este local. Curtido tras las barras barbanzanas, llegó a Compostela hace un par de años por motivos
-                    laborales.
-                    <br>
-                    «Antes trabajaba muchas horas, con un solo día libre a la semana y un sueldo que no llegaba a los
-                    1.000 euros», explica. En la capital gallega pasó por la cocina de una cadena de fast food y «tuve
-                    la suerte luego de empezar en El Rincón Siciliano, de encargado de sala». A principios de este año
-                    le echó el ojo a la cervecería de la rúa Santiago de Chile, pensando en que algún día podría ser
-                    suyo este pintoresco espacio con aires de pub irlandés, en cuya fachada se empotró un coche allá por
-                    el 2023.
-                    <br>
-                    Reunió todos sus ahorros y se lanzó a una aventura que lo ilusionaba, intentando sacarla adelante
-                    con mucho esfuerzo y sudor, relata emocionado: «Me puse a pintar y arreglar el bar en mis ratos
-                    libres. Como estaba en la pizzería al mediodía y noche, venía aquí a trabajar por las mañanas y las
-                    tardes. Hice mal... empecé la casa por el tejado. En vez de ir al Ayuntamiento en primer lugar,
-                    esperé a tener todo listo para pedir el permiso de actividad. No sabía que iba a haber tanto trámite
-                    para abrir y me encontré con que la licencia estaba parada a raíz del choque que hubo», rememora
-                    Adrián, al que llaman cariñosamente sus conocidos Adriansiño. Hace dos meses dejó su empleo para
-                    volcarse en este proyecto. Contaba con poder reinaugurar La Jarra en septiembre, pero los problemas
-                    se han ido concatenando hasta ahora, hasta el punto en que le dio un principio de infarto por el
-                    estrés, dice: «Esto lleva ya cuatro meses parado y todo el trabajo que hice no sirvió para nada. Al
-                    principio me mandaban insonorizar de nuevo todo el local, que eran casi 60.000 euros, entre otras
-                    cosas. Luego, un trabajador municipal, que me ayudó bastante, dijo que bastaba con insonorizar la
-                    fachada afectada por el accidente. Cuando ya aceptaron todo los técnicos, tuve que esperar a que
-                    pudieran hacer la obra».
-                    <br>
-                    En este impás de tiempo, aprovechó ese espacio paralizado para montar un punto de recogida de ayuda
-                    humanitaria para los afectados por la dana y consiguió reunir todo un cargamento solidario, que él
-                    mismo llevó a Catarroja junto con otras personas en un tráiler y seis furgonetas. «Estando allí me
-                    llamaron para empezar la obra. Las opciones eran volverme o quedarme ayudando a esa gente, y me
-                    quedé», recuerda un joven que en su día fue voluntario de Protección Civil de Ribeira. Ahora, ya de
-                    vuelta, cuenta los días para la inauguración, que espera que sea este año. Tiene muchos planes para
-                    ese bar, que ya se ha convertido en un símbolo de solidaridad. A él tampoco le faltaron manos amigas
-                    en todo este viaje y está especialmente agradecido a sus compañeros de piso, Brais (de A Bandeira) y
-                    Alicia (de Boiro), quienes «estuvieron ayudándome en todo, me dieron apoyo emocional cuando más lo
-                    necesitaba y hasta dinero», confiesa con voz entrecortada.
-                    <br>
-                    Adriansiño es un joven polifacético. Además de haber hecho varios cursos de hostelería, cocina y
-                    coctelería, tiene la Libreta Marítima (un documento imprescindible para trabajar a bordo de un
-                    barco), la licencia de buceo, se formó en primeros auxilios, incendios urbanos y forestales, es
-                    carretillero... Y, además, es de esas personas a las que le gusta ayudar a los demás, como quedó ya
-                    patente. Estuvo dos años como voluntario de Protección Civil de Ribeira y recuerda que participó en
-                    el rescate de los cuerpos de un barco hundido en Corrubedo. «Mi padre falleció justo ese día. Fue un
-                    suicidio. Eso fue lo que hizo que acabase viniendo a Santiago, porque allí estaba mal, pero siempre
-                    me quedó la espinita de ayudar. En Protección Civil lo pasaba muy bien y volver a casa sabiendo que
-                    has hecho algo bueno por otros es muy gratificante. Por eso, cuando pasó lo de Valencia, quería ir
-                    allá. No conocía a nadie, pero lo vi por la tele y empecé a hablar con los compañeros para hacer
-                    algo... total, yo el bar lo tenía parado», relata.
-                    «Nos encontramos con el problema de que no dejaban pasar. Fui a Protección Civil de Santiago y me
-                    propusieron organizar un punto de recogida. Sinceramente, no me esperaba que toda la ciudad se
-                    volcase de esta forma. Hice una publicación en Instagram para pedir ayuda y la compartió muchísima
-                    gente, entre ellos, varias cuantas universitarias muy conocidas. Vinieron muchos estudiantes. Fue
-                    una locura. Había una fila de gente a las puertas del bar trayendo cosas: agua, alimentos, productos
-                    de limpieza e higiene personal, comida para animales y bebés... Conseguí cuatro furgonetas, que
-                    fueron antes que nosotros y se les complicó un poquito llegar hasta las zonas afectadas. Gracias a
-                    los contactos que tenía de Protección Civil en Ribeira, pudieron entrar y dejaron el material a la
-                    gente más necesitada. Pero tenía aún mucho más. Llenamos otras dos furgonetas de un chico que las
-                    puso sin cobrar alquiler ni nada, conseguimos también un tráiler, cargado con el resto», explica.
-                    <br>
-                    «Salimos el viernes 8 y la gente colaboró para la gasolina, peajes, financiar los gastos de
-                    traslado, incluso colaboraron los chavales para cargar los vehículos... fue impresionante. Al llegar
-                    allí no podíamos entrar. Había un tráfico enorme. Fuimos a una gasolinera cercana andando, donde
-                    había un punto operativo con miembros de la Guardia Civil, militares, Policía Local, Protección
-                    Civil... y, hablando con ellos, nos dieron los permisos para ir a Catarroja. Sinceramente, cuando
-                    llegué allí, no esperaba para nada esa imagen. Está muy mal. Como no queríamos que las cosas que
-                    llevamos se quedaran en un local o en manos de una asociación sin saber si llegaban a la ciudadanía,
-                    lo que hicimos fue repartir todo en cada esquina de las aceras, para que pudiese cualquiera coger lo
-                    que necesitaba. El domingo tenían que volver las furgonetas, porque esta persona las necesitaba para
-                    trabajar el lunes, pero otros nos quedamos allí ayudando: limpiando un edificio, el garaje, sacando
-                    agua y lodo de las calles... Y el tráiler llegó el lunes. Antes de que lo hiciese es cuando me
-                    dijeron que sí a la obra, pero quería acabar lo que había empezado allí, así que nos quedamos allí
-                    hasta el martes y llegamos aquí el miércoles de la semana pasada por la noche, el día 13, de vuelta.
-                    Recuerdo que la gente de allí venía llorando a darnos las gracias y nos invitaba a ducharnos y
-                    dormir en sus casas. Ahora aún queda ropa que la gente donó almacenada, que haremos llegar en cuanto
-                    se pueda y, si hicieran falta más recogidas, en los próximos meses, se harán», dice un veinteañero
-                    tan trabajador como comprometido socialmente.
-                </p>
-            </section>
-            <section id="noticia2">
-                <h2>Santiago y A Coruña, sin tren hasta el sábado: «Nos habría gustado una alternativa real»</h2>
-                <br>
-                <p>
-                    A partir de hoy y hasta el sábado 14 habrá menos trenes y más autobuses de lo habitual en la
-                    estación intermodal de Santiago. Ante las obras que el Administrador de Infraestructuras
-                    Ferroviarias (Adif) está ejecutando en la nueva intermodal de San Cristóbal de A Coruña Renfe se ha
-                    visto obligada a habilitar un plan alternativo para poder transportar a los viajeros desde Santiago
-                    hasta A Coruña y Ferrol. Será mediante autobuses que suplirán el servicio que debían prestar los
-                    Alvia y los AVE los días 10, 11, 12 y 13 de diciembre.
-                    <br>
-                    <br>
-                    <br>
-                    «Hay circulaciones suspendidas»
-                    <br>
-                    <br>
-                    Sin embargo, los trayectos con origen o destino en A Coruña y Ferrol no serán los únicos que se
-                    verán afectados estos días. La Plataforma de usuarios de media distancia de Renfe se queja de que el
-                    operador ferroviario ha suprimido también, en este caso sin transporte alternativo, los
-                    «madrugadores» con salida desde Vigo y Ourense: los Regionales 12512 y 12480 que partían de la
-                    ciudad olívica a las 5.00 y las 6.50 horas, respectivamente, y el Avant 09470 que salía a las 6.40
-                    horas desde la ciudad de As Burgas. «Te hablan del plan alternativo, pero lo que no cuentan es que
-                    hay circulaciones suspendidas», se lamentan desde la Plataforma.
-                    <br>
-                    En este sentido, el colectivo de usuarios asegura comprender que es necesario hacer obras, pero
-                    lamenta que la planificación de Renfe «no sea una alternativa» para los trabajadores y los
-                    estudiantes que necesitan llegar a primera hora a la ciudad herculina. «Es un volumen muy importante
-                    de gente, dadas las empresas que operan en la ciudad, que es, además, un importante centro de
-                    estudios tanto universitarios como de Formación Profesional», recuerdan.
-                    <br>
-                    «Los primeros que pueden llegar a la ciudad herculina no lo harán antes de las nueve de la mañana,
-                    un horario que no se adapta a todos los trabajos», explican desde la Plataforma, que también
-                    cuestiona el momento elegido para llevar a cabo la actuación: en plena temporada de exámenes.
-                    <br>
-                    «Nos habría gustado que nos proporcionasen una alternativa para poder continuar con nuestro día a
-                    día sin tener que perder tanto tiempo en la ida y la vuelta, porque la clave es estar más o menos a
-                    tu hora y volver en un plazo razonable», subrayan desde el colectivo de usuarios, que achaca la
-                    supresión de los trenes madrugadores desde Vigo y Ourense a las propias obras que se llevan a cabo
-                    en la estación intermodal compostelana. «No son capaces de mover todos los trenes», lamentan.
-                </p>
-            </section>
-            <section id="noticia3">
-                <h2>Hallan un cadáver al vaciar un camión de recogida de papel en A Coruña</h2>
-                <br>
-                <p>
-                    El cadáver de una persona ha aparecido en un contenedor de cartón y papel en A Coruña, han informado
-                    fuentes conocedoras del caso. El cuerpo se descubrió ya en la planta de reciclaje, en la zona de
-                    Bens, cuando los servicios de recogida vaciaron uno de los camiones que prestaron el servicio en las
-                    últimas horas.
-                    <br>
-                    La unidad de Policía Científica del 091 ha asumido la investigación y se encuentra en las
-                    instalaciones de reciclaje recabando pruebas, para determinar la identidad de la persona fallecida y
-                    las causas de su muerte.
-                    <br>
-                    Los agentes han ordenado la paralización total de la actividad de la planta, gestionada por Utramic.
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Noticias</a></li>
+            <li><a href="#">Deportes</a></li>
+            <li><a href="#">Cultura</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </nav>
 
-                </p>
+    <div class="contenedor">
+        <div class="columna">
+            <img src="https://estaticos-cdn.prensaiberica.es/clip/41deeb9c-9fee-4ab6-983c-fd93f8f8a8e5_16-9-discover-aspect-ratio_default_0.webp"
+                alt="Noticia 1">
 
-            </section>
-        </section>
-    </main>
+            <div class="noticia">
+                <h2>Bugallo dimite como senador del PSOE tras arropar a los concejales expulsados</h2>
+                <p>Xosé Sánchez Bugallo dimite como senador del PSOE. El exalcalde de Santiago dice adiós a la primera
+                    línea de la política tras presentar a las 9:00 en el registro del Senado un escrito de renuncia con
+                    fecha de este viernes. La previsión era que lo hiciera el 25 de julio -su último acto iba a ser la
+                    misa del Apóstol- para dar paso a Manuel Mirás, quien fue alcalde del concello de Oroso durante 22
+                    años. Bugallo dimite como senador por A Coruña, cargo que ocupaba desde las elecciones de julio de
+                    2023, porque "me pareceu un acto de pura coherencia e responsabilidade", aunque seguirá siendo
+                    militante de base.
+
+                    Sánchez Bugallo explicó esto último aclarando también que "hai dous meses renunciei tamén a ser
+                    presidente provincial, agora renuncio ao cargo institucional, pero espero seguir sendo toda a miña
+                    vida militante de base do Partido Socialista, non teño ningunha aspiración á ningún outro cargo". El
+                    exsenador traslado a los órganos del partido en Galicia su decisión "e o meu descontento", informó
+                    al secretario provincial, Bernardo Fernández, al coordinador do grupo parlamentario, al secretario
+                    general del grupo socialista en el Senado y también al portavoz de ese mismo grupo.</p>
+
+                Poco antes de que los cuatro ediles expulsados del PSOE de Santiago -Gonzalo Muíños, Mercedes Rosón,
+                Mila Castro y Marta Álvarez- llegasen este viernes a los juzgados de Compostela para la vista contra la
+                Comisión Federal de Ética y Garantías del partido -que firmó su expulsión-, Bugallo, alcalde entre los
+                años 1998 y 2011 y entre 2019 y 2023, ha defendido a los concejales díscolos en su calidad de
+                “representantes electos dos cidadáns” y lamenta la “imaxe horrorosa” que está dando el partido en la
+                capital gallega.
+
+                El exalcalde ha acudido a la vista en calidad de testigo con la intención de “contestar coa verdade,
+                nada máis”. También afirmó que, más que posicionarse con los ediles enfrentados con la dirección
+                socialista, “o que me posicionei foi cun concepto da política na que eu entendo que en todos os partidos
+                ten que haber un aparato orgánico porque é un elemento fundamental para o funcionamento dos partidos”
+                pero en el que considera “que a parte esencial da democracia é a vontade dos cidadáns”.
+
+                Por ello, subraya, “os representantes electos dos cidadáns deben gozar de respecto, incluso dunha
+                autonomía importante para actuar en representación dos cidadáns que os elixiron”. “De outro modo,
+                podemos transmitir á sociedade unha imaxe horrorosa e que creo que se está transmitindo en certa medida,
+                e neste caso, desgrazadamente, non hai unha excepción”, argumentou o exalcalde de Santiago. En este
+                sentido, cargou contra quen pretende “mandar” sen ter sido elixido nas urnas e imponer “decisións” que
+                “ao mellor non teñen moito que ver con aquilo que se votou”.
+
+                Bugallo también sostiene que esta forma de actuar en política “xera unha enorme desconfianza nos
+                partidos políticos e unha enorme desconfianza nas institucións”. “Esa é a miña forma de pensar, e non é
+                de agora, senón que é de sempre”, zanjóo el ya exdirigente socialista, quien cree que el cisma en el
+                PSOE de Santiago se podía haber “evitado” y que no era necesario acabar en los juzgados. Con todo, “pois
+                agora aquí está e será o que diga a xustiza”.
+            </div>
+        </div>
+
+        <div class="columna">
+            <img src="https://estaticos-cdn.prensaiberica.es/clip/09560e8a-4792-4d7d-953c-bd3e8b33ceb2_16-9-discover-aspect-ratio_default_0.webp"
+                alt="Noticia 2">
+
+            <div class="noticia">
+                <h2>Un fallo en el GPS deja a un camión atrapado en una carretera de Ames</h2>
+                <p>Un tráiler de gran tonelaje quedó atrapado este viernes en una estrecha pista rural que une
+                    Castiñeiro do Lobo con Pegariños, en el Concello de Ames, impidiendo por completo la circulación por
+                    la vía. Esta no es la primera vez que se vive esta situación en la zona, cuyos vecinos señalan a los
+                    sistemas de GPS como el gran culpable.
+
+                    La vía en cuestión conecta la AC-544 con la AC-543, y el Google Maps, según critican, recomienda
+                    esta ruta como atajo, ignorando que se trata de una vía demasiado estrecha y peligrosa para
+                    vehículos de tanto calibre.
+
+                    El camión quedó completamente atravesado en la vía, apoyado parcialmente en un poste eléctrico. Por
+                    el momento, el tráiler continúa en el lugar a la espera de que la grúa pueda retirarlo y se pueda
+                    restablecer la circulación.</p>
+            </div>
+        </div>
+
+        <div class="columna">
+            <img src="https://estaticos-cdn.prensaiberica.es/clip/259859bc-f336-405d-80e2-7861ebaabbea_16-9-discover-aspect-ratio_default_0.webp" alt="Noticia 3">
+            <div class="noticia">
+                <h2>El aparcamiento de la estación intermodal de Santiago estrena nueva imagen</h2>
+                <p>Santiago encara ya la cuenta atrás para la apertura del nuevo edificio de viajeros de la estación de tren, que estará operativo a lo largo de este mes de mayo, tal y como confirmaron este jueves desde el Administrador de Infraestructuras Ferroviarias (Adif). «Desde el 1 de mayo ya se está emitiendo en los MUPI digitales de la propia estación un vídeo sobre la inminente puesta en servicio del nuevo edificio de viajeros de la intermodal de Santiago y el consiguiente cambio de acceso para los usuarios de la estación, que se realizará a la altura de la pasarela peatonal», señalan en Adif, antes de añadir que, una vez esté operativa la nueva terminal, «el histórico vestíbulo de la estación quedará cerrado y se destinará a oficinas».
+
+Además, a la espera de que se pulan los últimos detalles previos a la puesta en marcha de la nueva infraestructura, la zona de aparcamiento situada en los exteriores de la estación ya luce nueva imagen, después de que a lo largo de los últimos días se completasen los trabajos de asfalatdo y de pintado, en una muestra más de que la apertura del nuevo edificio de viajeros está cada vez más cerca.
+
+No obstante, para completar el proyecto diseñado para la intermodal de la capital gallega, que pasará a denominarse ‘Estación de Santiago-Daniel Castelao’, resta la ejecución de la nueva zona de estacionamiento, que estará integrada dentro de la propia intermodal y contará con 900 plazas, tras una inversión de 9 millones de euros. La previsión es que el parking esté operativo en verano de 2026.
+</p>
+            </div>
+        </div>
+    </div>
+
+
 </body>
 
 </html>

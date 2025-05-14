@@ -4,71 +4,60 @@
     <title>Blog Dani - Spotify</title>
     <link rel="icon" type="image/png" href="../img/monalisa1.png" />
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/styles.css"> <!-- Vinculando el CSS ajustado -->
 </head>
 
-<body style="text-align: center;">
-    <header>
-        <img src="../img/monalisa1.png" title="Mona lisa sacando shelfie" alt="Mona lisa sacando shelfie">
-        <h1>Blog de Dani</h1>
-        <nav>
-            <a href="../index.html" style="margin: 10px;">Inicio</a></li>
-            <a href="../paginas/juegos.html" style="margin: 10px;">Juegos</a>
-            <!--<a href="../paginas/spotify.html" style="margin: 10px;"> Mi Spotify</a>-->
-            <a href="../paginas/videoteca.html" style="margin: 10px;">Videoteca</a>
+<body class="centrado">
+    <header class="encabezado">
+        <img src="../img/monalisa1.png" title="Mona lisa sacando shelfie" alt="Mona lisa sacando shelfie" class="logo">
+        <h1 class="titulo">Blog de Dani</h1>
+        <nav class="navegacion">
+            <a href="../index.html" class="enlace">Inicio</a>
+            <a href="../paginas/juegos.html" class="enlace">Juegos</a>
+            <a href="../paginas/videoteca.html" class="enlace">Videoteca</a>
         </nav>
     </header>
-    <br>
-    <hr>
-    <br>
-    <main>
+
+    <main class="contenido">
         <h1>Mis playlists de Spotify</h1>
-        <p>Aqui algunas de mis listas de spotify</p>
-        <section style="border-radius:20px; margin: 10px;">
-            <iframe style="border-radius:12px; margin: 10px;"
-                src="https://open.spotify.com/embed/playlist/37i9dQZF1DWTyTiBbDrmml?utm_source=generator" width="40%"
-                height="352" frameBorder="0" allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-                loading="lazy"></iframe>
+        <p>Aquí algunas de mis listas de Spotify:</p>
 
-            <iframe style="border-radius:20px; margin: 10px;"
-                src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4ftaIFupZN4?utm_source=generator" width="40%"
-                height="352" frameBorder="0" allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
-            </iframe>
+        <section class="playlists">
+            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DWTyTiBbDrmml?utm_source=generator" 
+                    frameborder="0" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                    loading="lazy"></iframe>
 
-            <iframe style="border-radius:20px; margin: 10px;"
-                src="https://open.spotify.com/embed/playlist/2FAA3cudStouO7TuAH8ukK?utm_source=generator" width="40%"
-                height="352" frameBorder="0" allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
-            </iframe>
+            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX4ftaIFupZN4?utm_source=generator" 
+                    frameborder="0" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                    loading="lazy"></iframe>
 
-            <iframe style="border-radius:20px; margin: 10px;"
-                src="https://open.spotify.com/embed/playlist/37i9dQZF1EQncLwOalG3K7?utm_source=generator" width="40%"
-                height="352" frameBorder="0" allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
-            </iframe>
+            <iframe src="https://open.spotify.com/embed/playlist/2FAA3cudStouO7TuAH8ukK?utm_source=generator" 
+                    frameborder="0" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                    loading="lazy"></iframe>
 
-            <iframe style="border-radius:20px; margin: 10px;"
-                src="https://open.spotify.com/embed/playlist/36BKQUO2T5uCK7fW7pEnLz?utm_source=generator" width="40%"
-                height="352" frameBorder="0" allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
-            </iframe>
+            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1EQncLwOalG3K7?utm_source=generator" 
+                    frameborder="0" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                    loading="lazy"></iframe>
 
-            <iframe style="border-radius:20px; margin: 10px;"
-                src="https://open.spotify.com/embed/playlist/37i9dQZF1DX10zKzsJ2jva?utm_source=generator" width="40%"
-                height="352" frameBorder="0" allowfullscreen=""
-                allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
-            </iframe>
+            <iframe src="https://open.spotify.com/embed/playlist/36BKQUO2T5uCK7fW7pEnLz?utm_source=generator" 
+                    frameborder="0" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                    loading="lazy"></iframe>
+
+            <iframe src="https://open.spotify.com/embed/playlist/37i9dQZF1DX10zKzsJ2jva?utm_source=generator" 
+                    frameborder="0" 
+                    allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
+                    loading="lazy"></iframe>
         </section>
     </main>
-    <br>
-    <hr>
-    <br>
-    <footer>
+
+    <footer class="pie">
         <p>Blog de Dani &copy; 2024</p>
-        <p><strong>Web proyecto para <abbr title="Aplicaciones Web">AW</abbr> de 2º<abbr
-                    title="Sistemas Microinformaticos y Redes">SMR</abbr></strong>
-        </p>
+        <p><strong>Web proyecto para <abbr title="Aplicaciones Web">AW</abbr> de 2º<abbr title="Sistemas Microinformaticos y Redes">SMR</abbr></strong></p>
     </footer>
 </body>
 
