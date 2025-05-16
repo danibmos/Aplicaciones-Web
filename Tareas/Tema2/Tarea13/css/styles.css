@@ -1,0 +1,58 @@
+body {
+    background-color: #000;
+    color: white;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: black;
+    padding: 20px;
+    text-align: left;
+}
+
+.logo {
+    color: red;
+    font-size: 40px;
+    margin: 0;
+    text-align: center;
+    transition: text-shadow 0.3s;
+}
+
+.logo:hover {
+    text-shadow: 0 0 20px red, 0 0 40px #fff;
+}
+
+main {
+    padding: 20px;
+}
+
+.categoria {
+    margin-bottom: 60px;
+}
+
+.categoria h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: white;
+}
+
+.grid-peliculas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+}
+
+.grid-peliculas img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.grid-peliculas img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+}
